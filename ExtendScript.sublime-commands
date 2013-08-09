@@ -1,0 +1,14 @@
+[
+  {
+    "caption": "ExtendScript: Build for After Effects",
+    "command": "build_for_after_effects"
+  },
+  {
+    "caption": "ExtendScript: Build for Photoshop",
+    "command": "build_for_photoshop"
+  },
+  {
+    "caption": "ExtendScript: Build for Illustrator",
+    "command": "build_for_illustrator"
+  }
+]
