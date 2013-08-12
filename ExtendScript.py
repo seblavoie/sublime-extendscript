@@ -7,28 +7,24 @@ import subprocess
 import sublime
 import sublime_plugin
 
-settings = sublime.load_settings("ExtendScript.sublime-settings")
-
-
 class ExtendScriptCommand(sublime_plugin.TextCommand):
-
+    
     def init(self):
         self.currentFile = self.view.file_name()
         self.currentPath = os.path.dirname(self.currentFile)
         self.settings    = sublime.load_settings("ExtendScript.sublime-settings")
 
-
     def copyToSoftwareFolder(self, softwarePath):
-
         # Changing the extension
+        scriptFolderPath = self.settings.get(softwarePath + '_path')
         file_name = re.sub(r'.*/(.*)\..*$', r'\1.jsx', self.currentFile)
-        self.destination_file = softwarePath + file_name
+        self.destination_file = scriptFolderPath + file_name
+        
         # Copying the file to desination
         shutil.copyfile(self.currentFile, self.destination_file)
 
 
     def compileEsFile(self):
-        
         file_handle = open(self.destination_file, 'r')
         file_string = file_handle.read()
         file_handle.close()
@@ -44,14 +40,13 @@ class ExtendScriptCommand(sublime_plugin.TextCommand):
 
     
     def makeReplacements(self, line):
-        
         output = line
 
-        if settings.get('compile_includes'):
+        if self.settings.get('compile_includes'):
             if re.match(r'.*#include', line):
                 output = self.replaceIncludes(line)
 
-        if settings.get('set_debug_false'):
+        if self.settings.get('set_debug_false'):
             if re.match(r'.*debug = .*', line):
                 output = self.replaceDebug(line)
 
@@ -59,7 +54,6 @@ class ExtendScriptCommand(sublime_plugin.TextCommand):
 
     
     def replaceIncludes(self, line):
-        
         path = re.sub(r'.*#include \"(.*)\";?', r'\1', line)
         path = self.currentPath + "/" + path
         with open(os.path.abspath(path)) as f:
@@ -69,7 +63,6 @@ class ExtendScriptCommand(sublime_plugin.TextCommand):
 
     
     def replaceDebug(self, line):
-        
         return re.sub(r'debug = true', r'debug = false', line)
 
 
@@ -77,18 +70,17 @@ class ExtendScriptCommand(sublime_plugin.TextCommand):
 class BuildForIllustrator(ExtendScriptCommand):
     def run(self, edit):
         self.init()
-        self.copyToSoftwareFolder(settings.get('Ai_path'))
+        self.copyToSoftwareFolder('ai')
         self.compileEsFile()
 
 class BuildForPhotoshop(ExtendScriptCommand):
     def run(self, edit):
         self.init()
-        self.copyToSoftwareFolder(settings.get('Ps_path'))
+        self.copyToSoftwareFolder('ps')
         self.compileEsFile()
     
 class BuildForAfterEffects(ExtendScriptCommand):
     def run(self, edit):
         self.init()
-        self.copyToSoftwareFolder(settings.get('Ae_path'))
+        self.copyToSoftwareFolder('ae')
         self.compileEsFile()
-    

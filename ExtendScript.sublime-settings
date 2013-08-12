@@ -2,9 +2,9 @@
   /*
     Paths to your scripts folders
   */
-  "Ae_path": "/Applications/Adobe After Effects CS5.5/Scripts/ScriptUI Panels/",
-  "Ps_path": "/Applications/Adobe Photoshop CS5.1/Scripting/",
-  "Ai_path": "/Applications/Adobe Illustrator CS5.1/Scripts/",
+  "ae_path": "/Applications/Adobe After Effects CS5.5/Scripts/ScriptUI Panels/",
+  "ps_path": "/Applications/Adobe Photoshop CS5.1/Scripting/",
+  "ai_path": "/Applications/Adobe Illustrator CS5.1/Scripts/",
 
   /*
     Will replace every #include statement by the file's content
