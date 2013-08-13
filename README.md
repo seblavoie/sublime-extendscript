@@ -27,3 +27,7 @@ You'll probably want to have a debug variable or property somewhere to help you 
 - Add automatic software detection using `#target`.
 - Add AppleScript to open and run the script from the ExtendScript Toolkit.
 - Add CoffeeScript support.
+
+## Collaborators
+
+Thanks to [@ZombieHippie](https://github.com/ZombieHippie) for [his shot](https://github.com/ZombieHippie/sublime-text-2-ExtendScript) at turning my [previous shell build system](https://github.com/seblavoie/After-Effects-Scripting-Sublime-Text-Package) into a real Sublime Text python plugin.
