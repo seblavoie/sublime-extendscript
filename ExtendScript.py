@@ -67,6 +67,12 @@ class ExtendScriptCommand(sublime_plugin.TextCommand):
 
 
 
+class BuildForIndesign(ExtendScriptCommand):
+    def run(self, edit):
+        self.init()
+        self.copyToSoftwareFolder('id')
+        self.compileEsFile()
+
 class BuildForIllustrator(ExtendScriptCommand):
     def run(self, edit):
         self.init()

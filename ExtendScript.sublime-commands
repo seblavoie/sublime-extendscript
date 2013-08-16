@@ -10,5 +10,9 @@
   {
     "caption": "ExtendScript: Build for Illustrator",
     "command": "build_for_illustrator"
+  },
+  {
+    "caption": "ExtendScript: Build for InDesign",
+    "command": "build_for_indesign"
   }
 ]
