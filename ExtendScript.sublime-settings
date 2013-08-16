@@ -2,9 +2,9 @@
   /*
     Paths to your scripts folders
   */
-  "ae_path": "/Applications/Adobe After Effects CS5.5/Scripts/ScriptUI Panels/",
-  "ps_path": "/Applications/Adobe Photoshop CS5.1/Scripting/",
-  "ai_path": "/Applications/Adobe Illustrator CS5.1/Scripts/",
+  "ae_path": "/Applications/Adobe After Effects CS6/Scripts/ScriptUI Panels/",
+  "ps_path": "/Applications/Adobe Photoshop CS6/Scripting/",
+  "ai_path": "/Applications/Adobe Illustrator CS6/Scripts/",
   "id_path": "/Applications/Adobe Illustrator CS6/Scripts/",
 
   /*
