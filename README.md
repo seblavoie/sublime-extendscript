@@ -11,6 +11,7 @@ Use `⌘+⇧+P` and chose between the options.
 - ExtendScript: Build for After Effects
 - ExtendScript: Build for Photoshop
 - ExtendScript: Build for Illustrator
+- ExtendScript: Build for InDesign
 
 ### `#include` compilation
 
