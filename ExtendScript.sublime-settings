@@ -2,10 +2,10 @@
   /*
     Paths to your scripts folders
   */
-  "ae_path": "/Applications/Adobe After Effects CC/Scripts/ScriptUI Panels/",
-  "ps_path": "/Applications/Adobe Photoshop CC/Scripting/",
-  "ai_path": "/Applications/Adobe Illustrator CC/Scripts/",
-  "id_path": "/Applications/Adobe Illustrator CC/Scripts/",
+  "ae_path": "/Applications/Adobe After Effects CC 2014/Scripts/ScriptUI Panels/",
+  "ps_path": "/Applications/Adobe Photoshop CC 2014/Scripting/",
+  "ai_path": "/Applications/Adobe Illustrator CC 2014/Scripts/",
+  "id_path": "/Applications/Adobe InDesign CC 2014/Scripts/",
 
   /*
     Will replace every #include statement by the file's content
