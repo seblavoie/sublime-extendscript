@@ -30,7 +30,7 @@ You'll probably want to have a debug variable or property somewhere to help you 
 The preferred method of installation is via [Sublime Package Control](http://wbond.net/sublime_packages/package_control).
 
 1. [Install Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
-2. From inside Sublime Text 2, open Package Control's Command Pallet: CTRL+SHIFT+P (Windows, Linux) or ⌘+⇧+P` on Mac.
+2. From inside Sublime Text 2, open Package Control's Command Pallet: `Ctrl`+`Shift`+`P` (Windows, Linux) or `⌘`+`⇧`+`P` on Mac.
 3. Type `install package` and hit Return. A list of available packages will be displayed.
 4. Type `ExtendScript` and hit Return. The package will be downloaded to the appropriate directory.
 5. Restart Sublime Text 2 to complete installation.
