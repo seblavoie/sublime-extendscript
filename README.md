@@ -1,3 +1,8 @@
+# Deprecated
+
+This package is deprecated and I would suggest using Adobe's official [Extendscript Debugger](https://marketplace.visualstudio.com/items?itemName=Adobe.extendscript-debug) instead. 
+
+
 # ExtendScript for Sublime Text
 
 A plugin to help with ExtendScript development workflow. It's really basic but it might be helpful. Feel free to contribute!
